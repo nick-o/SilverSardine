@@ -21,7 +21,7 @@ namespace SilverSardine.Tests.Web.Controllers
             var result = controller.Index() as ViewResult;
 
             Assert.That(result, Is.Not.Null);
-            Assert.That(controller.ViewBag.Message, Is.EqualTo("Hello world!"));
+            Assert.That(controller.ViewBag.Message, Is.EqualTo("Hiya world!"));
         }
     }
 }
