@@ -10,7 +10,7 @@ namespace SilverSardine.Web.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Hello world!";
+            ViewBag.Message = "Hiya world!";
             return View();
         }
     }
