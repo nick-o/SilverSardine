@@ -13,10 +13,8 @@ if (! $service)
 }
 else
 {
-    Write-Host "The service will be stopped and reconfigured"
+    Write-Host "The service will be reconfigured"
 
-    Stop-Service $ServiceName -Force
-     
     & "sc.exe" config "$ServiceName" binPath= $fullPath start= auto | Write-Host
 }
 
